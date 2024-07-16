@@ -1,0 +1,146 @@
+/*styles.css*/
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #feedde;
+}
+
+header {
+    background-color: #769172 ; /* Adjust the background color as needed */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px;
+}
+
+.navbar nav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #095944 ;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #feedde; /* Adjust the hover color as needed */
+
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo a {
+    text-decoration: none;
+    color: #feedde;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-left: 20px;
+}
+
+.social-icons li a img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s;
+}
+
+.social-icons li a img:hover {
+    filter: invert(40%) sepia(100%) saturate(1500%) hue-rotate(210deg) brightness(95%) contrast(100%);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-color: #769172 ;
+    height: 115vh;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    position: relative;
+    top: -150px;
+    max-width: 600px
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #feedde;
+    margin: 0;
+    font-weight: 600;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 95%;
+    height: auto;
+    position; relative;
+    top: 50px;
+    left: -25%;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #769172 ;
+}
+
+footer {
+  background-color: #769172 ;
+  color: #feedde;
+  text-align: center;
+  padding: 10px 0;
+}
