@@ -62,7 +62,6 @@ header {
     text-decoration: none;
     color: #feedde;
     font-size: 30px;
-    font-weight: bold
 }
 
 .social-icons {
@@ -73,17 +72,17 @@ header {
 }
 
 .social-icons li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .social-icons li a img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   transition: filter 0.3s;
 }
 
-.social-icons li a img:hover {
-    filter: invert(40%) sepia(100%) saturate(1500%) hue-rotate(210deg) brightness(95%) contrast(100%);
+.social-icons li a:hover img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(110%) contrast(108%);
 }
 
 #hero {
@@ -106,14 +105,14 @@ header {
     flex: 1;
     position: relative;
     top: -150px;
-    max-width: 600px
+    max-width: 600px;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
     color: #feedde;
     margin: 0;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .hero-image {
