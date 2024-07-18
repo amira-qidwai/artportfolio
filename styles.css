@@ -22,7 +22,7 @@ header {
     padding: 35px 30px;
 }
 
-.navbar nav{
+.navbar nav {
   display: flex;
   align-items: center;
   width: 100%;
@@ -89,7 +89,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 50px;
+    padding: 100px 50px 40px 50px;
     background-color: #769172 ;
     height: 115vh;
 }
@@ -104,7 +104,7 @@ header {
 .hero-text {
     flex: 1;
     position: relative;
-    top: -150px;
+    top: -100px;
     max-width: 600px;
 }
 
@@ -129,6 +129,79 @@ header {
     position; relative;
     top: 50px;
     left: -25%;
+}
+
+.featured-works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: #769172;
+}
+
+.section-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px; /* Space between the heading and the gallery section */
+    color: #feedde; /* Adjust the color as needed */
+    font-weight: 400;
+}
+
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #769172;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 0 0 calc(50% - 40px); /* Two items per row with margin accounted for */
+    margin: 20px; /* Equal margin on all sides*/
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #769172;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item .overlay-text {
+  font-size: 28px;
+  color: #feedde;
+}
+
+.gallery-item:hover img {
+  opacity: 0;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
 }
 
 section {
