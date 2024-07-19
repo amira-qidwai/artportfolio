@@ -1,14 +1,18 @@
 /*styles.css*/
-body{
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden; /*Prefent horizontal scrolling*/
   color: #feedde;
 }
 
 header {
-    background-color: #769172 ; /* Adjust the background color as needed */
+    background-color: #769172;
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,14 +52,13 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #feedde; /* Adjust the hover color as needed */
-
+    color: #feedde;
 }
 
 .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo a {
@@ -85,6 +88,24 @@ header {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(110%) contrast(108%);
 }
 
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: #feedde;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.logo, .hamburger-menu {
+  z-index: 1001; /* Any value higher than the z-index of .navbar nav */
+}
+
 #hero {
     display: flex;
     align-items: center;
@@ -104,7 +125,7 @@ header {
 .hero-text {
     flex: 1;
     position: relative;
-    top: -100px;
+    top: -50px;
     max-width: 600px;
 }
 
@@ -140,7 +161,7 @@ header {
 }
 
 .section-heading {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     margin-bottom: 10px; /* Space between the heading and the gallery section */
     color: #feedde; /* Adjust the color as needed */
@@ -207,7 +228,62 @@ header {
 section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #769172 ;
+  background-color: #769172;
+}
+
+.subscribe-section {
+  padding: 60px 20px;
+  background-color: #769172;
+  text-align: center;
+}
+
+.subscribe-section h2 {
+  font-size: 28px;
+  color: #feedde;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.subscribe-section p {
+  font-size: 18px;
+  color: #feedde;
+  margin-bottom: 20px;
+}
+
+.subscribe-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.subscribe-section input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 1px solid #feedde;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #feedde;
+  color: #095944;
+}
+
+.subscribe-section button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #feedde;
+  background-color: #095944;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-section button[type="submit"]:hover {
+  background-color: #feedde;
+  color: #095944;
 }
 
 footer {
@@ -215,4 +291,72 @@ footer {
   color: #feedde;
   text-align: center;
   padding: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-color: #769172;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding-top: 70px;
+    transform: translateX(-100);
+    transition: transform 0.5s ease;
+  }
+
+  .navbar nav.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .social-icons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-icons li {
+    margin: 0 10px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+  }
+
+  /* Ensure the logo is properly positioned on smaller screens */
+  .logo {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    font-size: 24px;
+    transform: none;
+  }
 }

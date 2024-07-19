@@ -14,6 +14,14 @@
 
     <header>
       <div class="navbar">
+        <div class="logo">
+          <a href="#home">Amira Qidwai</a>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <nav>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -22,9 +30,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <div class="logo">
-            <a href="#home">Amira Qidwai</a>
-          </div>
           <ul class="social-icons">
             <li>
               <a href="https://www.instagram.com/amiraqidwai/" target="_blank">
@@ -107,15 +112,12 @@
       </div>
     </div>
 
-    <section id="subscribe">
-      <h2>Subscribe</h2>
+    <section class="subscribe-section">
+      <h2 class="section-heading">Subscribe</h2>
       <p>Sign up with your email address to recieve news and updates from Amira Qidwai.</p>
-      <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <input type="submit" value="Sign Up">
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
       </form>
     </section>
 
@@ -123,6 +125,7 @@
       <p> &copy; Amira Qidwai 2024. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
   </body>
 
 </html>
