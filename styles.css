@@ -135,6 +135,7 @@ header {
   top: -50px;
   max-width: 600px;
   text-align: left;
+  outline: 1px solid blue;
 }
 
 .hero-text h1 {
@@ -158,6 +159,7 @@ header {
   position: relative;
   margin: auto;
   display: block;
+  outline: 1px solid red;
   /* top: 50px;
   left: -25%; */
 }
@@ -402,7 +404,7 @@ footer {
       flex-direction: column;
       padding: 20px 0;
   }
-  
+
   .hero-text {
        position: static; /* Reset the position */
        top: auto; /* Reset the top value */
