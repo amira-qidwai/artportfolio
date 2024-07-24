@@ -117,7 +117,7 @@ header {
     justify-content: space-between;
     padding: 100px 50px 40px 50px;
     background-color: #769172;
-    height: 115vh;
+    height: 135vh;
 }
 
 .hero-content {
@@ -130,14 +130,14 @@ header {
 .hero-text {
     flex: 1;
     position: relative;
-    top: -50px;
+    top: -100px;
     max-width: 600px;
-    text-align: left;
-    margin-left: 5%;
+    text-align: center;
+    margin-right: 2%
 }
 
 .hero-text h1 {
-    font-size: 3.25rem;
+    font-size: 3rem;
     color: #feedde;
     margin: 0;
     font-weight: 400;
@@ -149,7 +149,7 @@ header {
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    margin-right: 5%;
+    margin-left: 2%;
 }
 
 .hero-image img {
@@ -158,14 +158,6 @@ header {
     position: relative;
     margin: auto;
     display: block;
-}
-
-.hero-text {
-    outline: 1px solid blue;
-}
-
-.hero-image img {
-    outline: 1px solid red;
 }
 
 /* Featured Works Section */
@@ -322,13 +314,19 @@ footer {
 }
 
 .contact-page header {
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  background-color: transparent;
 }
 
-.contact-section {
-  padding: 100px 20px;
-  text-align: center;
-  color: #feedde;
+.contact-page .navbar {
+  background-color: transparent;
+}
+
+.contact-page .subscribe-section {
+  background-color: transparent;
+}
+
+.contact-page footer {
+  background-color: transparent;
 }
 
 /* Responsive styles */
@@ -403,7 +401,7 @@ footer {
      .hero-content {
          flex-direction: column;
          padding: 20px 0;
-       }
+      }
 
       .hero-text {
          position: static;
@@ -421,5 +419,13 @@ footer {
             height: auto;
             position: relative;
             left: 0;
+        }
+
+        .gallery-row {
+          flex-direction: column;
+        }
+
+        .gallery-item {
+          flex: 0 0 100%; /* Take up the full width */
         }
 }
