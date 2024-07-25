@@ -321,6 +321,32 @@ footer {
   background-color: transparent;
 }
 
+.contact-info {
+  background-color: transparent;
+  text-align: center;
+  color: #feedde; /* Change this to the color you want for the text */
+  padding: 300px 0px; /* This adds some space above and below the text */
+}
+
+.contact-info h3 {
+  font-weight: normal; /* This makes the text unbolded */
+  font-size: 20px;
+}
+
+.contact-details {
+  font-size: 45px; /* This makes the text larger */
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  height: 50px; /* Adjust this to change the size of the icon */
+  width: 50px; /* Adjust this to change the size of the icon */
+  margin-right: 10px; /* This adds some space to the right of the icon */
+  vertical-align: middle;
+}
+
 .contact-page .subscribe-section {
   background-color: transparent;
 }
@@ -428,4 +454,34 @@ footer {
         .gallery-item {
           flex: 0 0 100%; /* Take up the full width */
         }
+}
+
+.about-section {
+  display: flex;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2em; /* Adjust this to change the size of the title */
+}
+
+.about-subtitle {
+  font-size: 1.5em; /* Adjust this to change the size of the subtitle */
+}
+
+.about-body-text {
+  font-size: 1em; /* Adjust this to change the size of the body text */
 }
