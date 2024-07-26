@@ -458,6 +458,8 @@ footer {
 
 .about-section {
   display: flex;
+  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .about-image {
@@ -465,17 +467,32 @@ footer {
 }
 
 .about-image img {
-  width: 100%;
+  max-width: 90%;
+  margin: 20px;
   height: auto;
 }
 
 .about-text {
   flex: 1;
   padding: 20px;
+  text-align: left;
+  margin-top: 50px;
+  max-width: 700px;
+}
+
+.about-text h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.about-text h2 {
+  font-size: 1.75em;
+  font-weight: normal;
 }
 
 .about-title {
-  font-size: 2em; /* Adjust this to change the size of the title */
+  font-size: 2.25em; /* Adjust this to change the size of the title */
+  font-weight: normal;
 }
 
 .about-subtitle {
@@ -483,5 +500,5 @@ footer {
 }
 
 .about-body-text {
-  font-size: 1em; /* Adjust this to change the size of the body text */
+  font-size: 1.1em; /* Adjust this to change the size of the body text */
 }
